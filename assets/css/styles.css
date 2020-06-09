@@ -1,0 +1,14 @@
+.col-sm-12 {
+    border: solid 1 dashed red;
+    padding: 0;
+}
+
+.bg-portfolio {
+    background-color: silver;
+}
+
+.bg-contenidos {
+    background-image: url('../img/fondorecursos.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
