@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: grid;
+    width: 100vw;
+    /* height: 100vh; */
+    grid-template: 2em 126px 1fr 1fr 1fr 1fr 1fr 1fr 1fr / repeat(8, fr);
+    grid-template-areas: 'header header header header header header header-rigth header-rigth' 'slider slider slider slider slider slider slider slider' 'portafolio portafolio portafolio portafolio portafolio portafolio portafolio portafolio' 'contenidoyr contenidoyr contenidoyr contenidoyr contenidoyr contenidoyr contenidoyr contenidoyr' 'clientes clientes clientes clientes clientes clientes clientes clientes ' 'partners partners partners partners partners partners partners partners ' 'cexito cexito cexito cexito cexito cexito cexito cexito ' 'contacto contacto contacto contacto contacto contacto contacto contacto ' 'footer footer footer footer footer footer footer footer ';
+}
+
+.header {
+    grid-area: header;
+    height: 4em;
+    background-image: url('../img/BarraBlanca.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.header-left {
+    padding: 0.5em;
+    height: 4em;
+    display: grid;
+    grid-template: 1fr / repeat(6, 1fr);
+    grid-template-areas: 'vacio logo mi-menu mi-menu mi-menu mi-menu';
+}
+
+.subheader {
+    grid-area: vacio;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.mi-menu {
+    grid-area: mi-menu;
+}
+
+.header-rigth {
+    grid-area: header-rigth;
+    background-image: url('../img/BarraMagenta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.slider {
+    grid-area: slider;
+    background-color: yellow;
+}
+
+.img-slider {
+    height: 100%;
+    width: 100%;
+}
+
+.portafolio {
+    grid-area: portafolio;
+    background-color: #f2f2f2;
+}
+
+.container-portafolio {
+    display: grid;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+    grid-template: 1fr 1fr 1fr / repeat(4, 1fr);
+    grid-template-areas: 'empty titulo empty empty' 'empty empty texto empty' 'empty carousel carousel empty';
+}
+
+.empty {
+    grid-area: empty;
+    border: dashed 1px red;
+}
+
+.titulo {
+    grid-area: titulo;
+    color: black;
+    font-size: 25px;
+}
+
+.texto {
+    grid-area: texto;
+}
+
+.carousel {
+    grid-area: carousel;
+    color: black;
+    font-size: 25px;
+}
+
+.contenido-recursos {
+    grid-area: contenidoyr;
+    background-color: silver;
+}
+
+.subp {
+    border: solid red 1px;
+}
+
+.clientes {
+    grid-area: clientes;
+    background-color: silver;
+}
+
+.partners {
+    grid-area: partners;
+    background-color: lightblue;
+}
+
+.cexito {
+    grid-area: cexito;
+    background-color: lightcyan;
+}
+
+.contacto {
+    grid-area: contacto;
+    background-color: lightseagreen;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: red;
+}
+
+.item {
+    /* border: solid 1px blue; */
+}
